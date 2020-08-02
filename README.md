@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/worthmine/String-Numeric-Whatever.svg?branch=master)](https://travis-ci.com/worthmine/String-Numeric-Whatever)
+[![Build Status](https://travis-ci.com/worthmine/String-Numeric-Whatever.svg?branch=master)](https://travis-ci.com/worthmine/String-Numeric-Whatever) [![MetaCPAN Release](https://badge.fury.io/pl/String-Numeric-Whatever.svg)](https://metacpan.org/release/String-Numeric-Whatever)
 # NAME
 
 String::Numeric::Whatever - It's a test implement to
@@ -21,7 +21,7 @@ String::Numeric::Whatever - It's a test implement to
 
 If you have knowledge of other language, You may think like that.
 
-_Why strings can't be compared with using `==`?_
+**Why strings can't be compared with using `==`?**
 
 I can't answer the reason why, but can give you this module.
 

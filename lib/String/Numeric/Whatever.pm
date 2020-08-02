@@ -49,7 +49,7 @@ B<ignore> the difference between C<E<lt>=E<gt>> and C<cmp>
 
 If you have knowledge of other language, You may think like that.
 
-I<Why strings can't be compared with using C<==>?>
+B<Why strings can't be compared with using C<==>?>
 
 I can't answer the reason why, but can give you this module.
 
