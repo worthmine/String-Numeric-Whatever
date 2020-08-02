@@ -86,8 +86,8 @@ you don't have to care about whatever this is a string or number.
 
 So you can write like below without warnings:
 
-say $str if $str == 'string';   # strings 
-say $num if $num ne 0;          # 1234 
+ say $str if $str == 'string';   # strings 
+ say $num if $num ne 0;          # 1234 
 
 =head1 LICENSE
 
