@@ -1,15 +1,18 @@
 language: perl
 matrix:
   include:
-    - perl: "5.12"
-      dist: trusty
-    - perl: "5.14"
-    - perl: "5.16"
-    - perl: "5.18"
-    - perl: "5.20"
-    - perl: "5.22"
-    - perl: "5.24"
-    - perl: "5.26"
-    - perl: "5.28"
-    - perl: "5.30"
+  - perl: '5.12'
+    dist: trusty
+  - perl: '5.14'
+  - perl: '5.16'
+  - perl: '5.18'
+  - perl: '5.20'
+  - perl: '5.22'
+  - perl: '5.24'
+  - perl: '5.26'
+  - perl: '5.28'
+  - perl: '5.30'
 
+notifications:
+  slack:
+    secure: xTEvDIMP2e+KldaGck0PJxR+swRMhzsxPY5O2XSkWjQ5i6Toae46rcYzACeh8VbgEyebUypsr+lrsIlEnkkTe6BGHKlhWvxrhoCHAKdI1EzL2PqxyV9V43fbPOUsTXOJbu+jsc59b/kYlv/oN0fLIou4P8cEjnPbzpeZqXQC1S6oGHJZGF/ltD59uONcMfRKjTE79jr8lb+wJk+0y1MrgjT6ZMcS2Lc89b9K28PLAv4mT+y6uiEAsfsCmeDhz92lG70l2zmrUNhLqQMbJbo2Z0RiF9IDDeV4l9tlGJ9V6aWKru2ti2FlDdzN7yp/6dlfeXmUo3YX3NWNsZbTDiuVJDH/slcS7qFyxcKxUFI+s1drr7+xJqrDvRtCf7TjPhPsOT20XwbEnVMzvLMzpVN7i+zOBOmYjfMZkGqcS4pLBhSv6Zx02S78Ci8+6fMY0Y0DLc0+cCRap1QDkA2UhdwgLZpajIAX5irCL5TYr8iPL6qlj07P4bm4Q1p4r8I8lEgljwdyttDtAlxu8u6ZWDDzrly0m22jpIQwEMaEgc46Z+ziVAI0bygjOCEDyYlfqJVYV6Tl7xzf9FsbP9SBVo3GgbYuFpof+WqMYGjF153ncijdakU4GVtamILq01+V9xzzcI5Fo+qVA6VbrS7hhyKEl0HZa/qrfomJojjFoJRasdE=
