@@ -3,25 +3,22 @@ use 5.008001;
 use strict;
 use warnings;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
+
+require Tie::Scalar;
+our @ISA = qw(Tie::StdScalar);
 
 use overload (
     '<=>' => \&compareAny,
     'cmp' => \&compareAny,
 );
-use Mouse;
-
-has value => ( is => 'rw', isa => 'Num|Str' );
-
-__PACKAGE__->meta->make_immutable();
-no Mouse;
 
 sub compareAny {
     no warnings;
     my $self = shift;
     return ( $_[0] ^ $_[0] ) eq '0'
-        ? $self->value() <=> $_[0]
-        : $self->value() cmp $_[0];
+        ? $self->FETCH() <=> $_[0]
+        : $self->FETCH() cmp $_[0];
 }
 
 1;
@@ -40,8 +37,8 @@ B<ignore> the difference between C<E<lt>=E<gt>> and C<cmp>
  my $str = String::Numeric::Whatever->new( value => 'strings' );
 
  say q|Succeeded in comparing with strings by 'eq'| if $str eq 'strings';            
- say q|Succeeded in comparing with Int by 'eq'| if $str eq 100;            
- say q|Succeeded in comparing with Int by '=='|     if $str == 100;
+ say q|Succeeded in comparing with Int by 'ne'|     if $str ne 100;            
+ say q|Succeeded in comparing with Int by '!='|     if $str != 100;
  say q|Succeeded in comparing with strings by '=='| if $str == 'strings';
            
 =head1 DESCRIPTION

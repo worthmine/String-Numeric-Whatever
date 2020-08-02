@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.com/worthmine/String-Numeric-Whatever.svg?branch=master)](https://travis-ci.com/worthmine/String-Numeric-Whatever)
 # NAME
 
 String::Numeric::Whatever - It's a test implement to
@@ -10,8 +10,8 @@ String::Numeric::Whatever - It's a test implement to
     my $str = String::Numeric::Whatever->new( value => 'strings' );
 
     say q|Succeeded in comparing with strings by 'eq'| if $str eq 'strings';            
-    say q|Succeeded in comparing with Int by 'eq'| if $str eq 100;            
-    say q|Succeeded in comparing with Int by '=='|     if $str == 100;
+    say q|Succeeded in comparing with Int by 'ne'|     if $str ne 100;            
+    say q|Succeeded in comparing with Int by '!='|     if $str != 100;
     say q|Succeeded in comparing with strings by '=='| if $str == 'strings';
               
 

@@ -1,5 +1,5 @@
 requires 'perl', '5.008001';
-requires 'Mouse';
+requires 'Tie::Scalar';
 requires 'overload';
 
 on 'test' => sub {

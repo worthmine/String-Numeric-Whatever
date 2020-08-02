@@ -42,7 +42,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Mouse" : "0",
+            "Tie::Scalar" : "0",
             "overload" : "0",
             "perl" : "5.008001"
          }
@@ -54,8 +54,22 @@
       }
    },
    "release_status" : "unstable",
-   "version" : "0.02",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/worthmine/String-Numeric-Whatever/issues"
+      },
+      "homepage" : "https://github.com/worthmine/String-Numeric-Whatever",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/worthmine/String-Numeric-Whatever.git",
+         "web" : "https://github.com/worthmine/String-Numeric-Whatever"
+      }
+   },
+   "version" : "0.03",
    "x_authority" : "cpan:WORTHMINE",
+   "x_contributors" : [
+      "worthmine <worthmine@gmail.com>"
+   ],
    "x_serialization_backend" : "JSON::PP version 2.27400_02",
    "x_static_install" : 1
 }
